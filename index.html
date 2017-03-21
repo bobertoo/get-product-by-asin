@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>amazon products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class='text-center'>Search DB</h1>
+        <table class="table" id="product-dropzone">
+          <tbody>
+            <tr>
+              <th>ASIN</th>
+              <th>Title</th>
+              <th>MPN</th>
+              <th>Price</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <h1 class='text-center'>Search Amazon</h1>
+        <form id="search-amz">
+          <input type="text" name="asin">
+          <input type="submit">
+        </form>
+        <br>
+        <ul>
+          <li><span class='searchTitle'>ASIN:</span><br><span id='asin_target'></span></li>
+          <li><span class='searchTitle'>Title:</span><br><span id='title_target'></span></li>
+          <li><span class='searchTitle'>MPN:</span><br><span id='mpn_target'></span></li>
+          <li><span class='searchTitle'>Price:</span><br><span id='price_target'></span></li>
+        </ul>
+        <button class="toDB">To DB</button>
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous">
+  </script>
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
